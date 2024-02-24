@@ -1,4 +1,4 @@
-//Program to display the subarrays , total count of the subarrays, Sum of each subarray and minimum- maximum subarray according to its sum.  
+//Program to display the subarrays , and total count of the subarrays.
 
 
 import java.util.*;
@@ -9,8 +9,6 @@ public class subarrays{
 		int ts=0;
 	for (int i=0; i<arr.length;i++){
 		int start=i;
-		int largest= Integer.MIN_VALUE;
-		int smallest= Integer.MAX_VALUE;
 		for(int j=i; j<arr.length; j++){
 			int end=j;
 			int sum=0;
@@ -22,18 +20,9 @@ public class subarrays{
 			ts++;
 			System.out.println();
 			System.out.println ("Sum=" +sum);
-			if(largest<sum){
-				largest = sum;
-			}
-			if(smallest>sum){
-				smallest= sum;
-			}
-
 		}
 		System.out.println();
-		System.out.println("Smallest sum of subarray is :" + smallest);
-		System.out.println("Largest sum of subarray is :" +largest);
-		System.out.println();
+		
 	}
 	System.out.println("Total subarrays are:" + ts);
 
