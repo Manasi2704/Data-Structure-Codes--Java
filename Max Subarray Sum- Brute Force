@@ -17,7 +17,6 @@ public class maxsubarray{
 
 				int end=j;
 
-				curr_sum=0;
 
 				for(int k=start; k<=end; k++){
 					//subarray sum
